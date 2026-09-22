@@ -14,11 +14,8 @@
 
 name: Sync Labels
 on:
-  push:
-    branches:
-      - main
-
-# Declare default permissions as read only.
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: read-all
 
 jobs:
