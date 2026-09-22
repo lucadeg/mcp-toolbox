@@ -15,11 +15,9 @@
 name: Publish to MCP Registry
 
 on:
-  push:
-    tags: ["v*"]  # Triggers on version tags like v1.0.0
-  # allow manual triggering with no inputs required
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   publish:
     runs-on: ubuntu-latest
