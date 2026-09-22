@@ -15,11 +15,8 @@
 name: pypi
 
 on:
-  pull_request:
-    paths:
-      - "pypi/**"
-      - ".github/workflows/pypi.yml"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: read-all
 
 jobs:
