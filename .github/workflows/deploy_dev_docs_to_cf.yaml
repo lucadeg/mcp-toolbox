@@ -18,18 +18,9 @@ permissions:
   contents: write
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'docs/**'
-      - '.github/workflows/docs*_cf.yaml'
-      - '.github/workflows/deploy*_cf.yaml'
-      - '.hugo/**'
-
-  # Allow triggering manually.
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   deploy:
     runs-on: ubuntu-24.04
