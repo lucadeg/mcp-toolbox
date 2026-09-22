@@ -20,10 +20,8 @@ permissions:
 # This Workflow depends on 'github.event.number',
 # not compatible with branch or manual triggers.
 on:
-  pull_request:
-    types:
-      - closed
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   clean:
     # Only run for PRs from the same repository to ensure secret access
