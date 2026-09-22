@@ -18,13 +18,8 @@ permissions:
   contents: read
 
 on:
-  pull_request:
-    paths:
-      - 'docs/**'
-      - '.github/workflows/docs**'
-      - '.ci/lint-docs-*.sh'
-      - '.hugo/data/filters.yaml'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   lint-source-pages:
     name: Lint Documentation
