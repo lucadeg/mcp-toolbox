@@ -14,24 +14,8 @@
 
 name: tests
 on:
-  push:
-    branches:
-      - "main"
-    paths:
-      - "**"
-      - "!docs/**"
-      - "!**.md"
-      - "!.github/**"
-      - ".github/workflows/tests.yaml"
-  pull_request:
-    paths:
-      - "**"
-      - "!docs/**"
-      - "!**.md"
-      - "!.github/**"
-      - ".github/workflows/tests.yaml"
-
-# Declare default permissions as read only.
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: read-all
 
 jobs:
