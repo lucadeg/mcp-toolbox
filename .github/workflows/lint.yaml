@@ -14,15 +14,8 @@
 
 name: lint
 on:
-  pull_request:
-    paths:
-      - "**"
-      - "!docs/**"
-      - "!**.md"
-      - "!.github/**"
-      - ".github/workflows/lint.yaml"
-
-# Declare default permissions as read only.
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: read-all
 
 jobs:
