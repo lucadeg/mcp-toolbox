@@ -16,13 +16,8 @@
 name: "CF: Build Docs Preview"
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, labeled]
-    paths:
-      - 'docs/**'
-      - '.github/workflows/docs*_cf.yaml'
-      - '.hugo/**'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: read-all
 
 jobs:
